@@ -10,13 +10,15 @@ from .serializers import *
 from .models import Image
 from .serializers import ImageSerializer
 from rest_flex_fields.views import FlexFieldsModelViewSet
+import matplotlib.pyplot as plt
+
 
 
 # Create your views here.
 
 
 def index(request):
-    read image from computer
+    #read image from computer
     path=plt.imread("C:\\Users\\derar\\Desktop\\project_graduation_images\\ku.jpg")
     faculty_name=return_faculty_name(path)
 
